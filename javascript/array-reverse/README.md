@@ -7,7 +7,12 @@
 <!-- Embedded whiteboard image -->
 ![array-reverse](../assets/array-reverse.jpg)
 
+-Open image :
 [array-reverse image](../assets/array-reverse.jpg)
+
+-Open pull request :
+[array-reverse image](https://github.com/SohaibAlmomani/data-structures-and-algorithms/pulls?q=is%3Apr+is%3Aclosed)
+
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
