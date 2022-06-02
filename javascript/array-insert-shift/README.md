@@ -6,10 +6,10 @@
 <!-- Embedded whiteboard image -->
 ![array-insert-shift](../assets/insert-Shift-Array.jpg)
 
--Open image :
+- Open image :
 [array-insert-shift image](../assets/insert-Shift-Array.jpg)
 
--Open pull request :
+- Open pull request :
 [array-insert-shift image](https://github.com/SohaibAlmomani/data-structures-and-algorithms/pulls?q=is%3Apr+is%3Aclosed)
 
 

@@ -7,10 +7,10 @@
 <!-- Embedded whiteboard image -->
 ![array-reverse](../assets/array-reverse.jpg)
 
--Open image :
+- Open image :
 [array-reverse image](../assets/array-reverse.jpg)
 
--Open pull request :
+- Open pull request :
 [array-reverse image](https://github.com/SohaibAlmomani/data-structures-and-algorithms/pulls?q=is%3Apr+is%3Aclosed)
 
 
