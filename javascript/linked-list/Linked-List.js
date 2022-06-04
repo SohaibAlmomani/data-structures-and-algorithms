@@ -1,14 +1,15 @@
 'use strict';
 
-const node = require ('./node');
+const node = require('./node');
 
 class linkedList {
-  constructor(){
+  constructor() {
     this.head = null;
     this.size = 0;
   }
-// insert (data){
 
-// }
+  // insert (data){
+
+  // }
 
 }
