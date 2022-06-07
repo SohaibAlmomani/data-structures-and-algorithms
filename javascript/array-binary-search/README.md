@@ -4,6 +4,8 @@
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+![Binary-Search](../assets/Binary-Search.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
+Logical thinking & solving step by step
