@@ -12,5 +12,5 @@ Logical thinking (using while loop to search the index number in array) & solvin
 
 The Big O for this approach is :
 
-Time : O(log(n)).
-Space : O(1).
+- Time : O(log(n)).
+- Space : O(1).
