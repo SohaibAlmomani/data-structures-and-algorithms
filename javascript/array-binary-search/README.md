@@ -8,4 +8,9 @@
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
-Logical thinking & solving step by step
+Logical thinking (using while loop to search the index number in array) & solving step by step .
+
+The Big O for this approach is :
+
+Time : O(log(n)).
+Space : O(1).
