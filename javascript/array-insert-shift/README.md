@@ -16,3 +16,8 @@
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
 Logical thinking (using for loop to shift the array) & solving step by step .
+
+The Big O for this approach is :
+
+- Time : O(n).
+- Space : O(1).
