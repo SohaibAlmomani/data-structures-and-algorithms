@@ -2,7 +2,7 @@
 const Node = require('../node');
 
 describe('node module test', () => {
-  it('create successfully node with Data and next', () => {
+  test('create successfully node with Data and next', () => {
     const testData = 'test';
     const node = new Node(testData);
     expect(node.data).toBe(testData);
