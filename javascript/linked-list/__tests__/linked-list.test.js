@@ -73,3 +73,60 @@ test('Can properly return a collection of all the data that exist in the linked 
 
   expect(ll.toString()).toEqual('{ 10 } -> { 20 } -> { 30 } -> NULL');
 });
+
+/* test for Code Challenge: Class 06 */
+
+test('Can successfully add a node to the end of the linked list', () => {
+  const ll = new LinkedList();
+  ll.append('20');
+  expect(ll.head.next).toBeNull();
+});
+
+test('Can successfully add multiple nodes to the end of a linked list', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  ll.append('20');
+  expect(ll.head.next.data).toEqual('20');
+  expect(ll.head.next.next).toBeNull();
+});
+
+test('Can successfully insert a node before a node located i the middle of a linked list', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  ll.append('20');
+  ll.append('30');
+  ll.insertBefore('20', 'x');
+  expect(ll.head.next.data).toEqual('x');
+  expect(ll.head.next.next.data).toEqual('20');
+});
+
+test('Can successfully insert a node before the first node of a linked list', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  ll.append('20');
+  ll.insertBefore('10', 'f');
+  console.log(ll.toString());
+  expect(ll.head.data).toEqual('f');
+});
+
+test('Can successfully insert after a node in the middle of the linked list', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  ll.append('20');
+  ll.append('30');
+  ll.insertAfter('20', 'x');
+  expect(ll.head.next.next.data).toEqual('x');
+  expect(ll.head.next.next.next.data).toEqual('30');
+
+});
+
+test('Can successfully insert a node after the last node of the linked list', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  ll.append('20');
+  ll.append('30');
+  ll.insertAfter('30', 'x');
+  expect(ll.head.next.next.next.data).toEqual('x');
+  expect(ll.head.next.next.next.next).toBeNull();
+
+});
