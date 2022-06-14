@@ -1,4 +1,6 @@
-# Challenge Summary
+# Linked-List Insertions
+
+## Challenge :
 
 <!-- Description of the challenge -->
 
@@ -22,10 +24,14 @@ insert after :
 ## Whiteboard Process
 
 <!-- Embedded whiteboard image -->
+### Append method :
+
+![append method](./assets/Append%20method.jpg)
 
 ## Approach & Efficiency
 
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
 Create Class LinkedLest that have three main functions :
 
 - append().
@@ -40,6 +46,7 @@ The Big O for this approach is :
 ## Solution
 
 <!-- Show how to run your code, and examples of it in action -->
+
 ### Test :
 
 Write tests to prove the following functionality:
