@@ -28,6 +28,10 @@ insert after :
 
 ![append method](./assets/Append%20method.jpg)
 
+### insretBefore method :
+
+![insretBefore method](./assets/insretBefore%20method.jpg)
+
 ## Approach & Efficiency
 
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
