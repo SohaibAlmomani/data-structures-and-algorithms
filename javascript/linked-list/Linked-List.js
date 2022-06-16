@@ -43,6 +43,8 @@ class LinkedList {
     string += `NULL`;
     return string;
   }
+
+
   getAt(index) {
     let current = this.head;
     let count = 0;
@@ -114,12 +116,38 @@ class LinkedList {
     return this;
   }
 
+  /* Code Challenge: Class 07 */
+
+  /* kthFormEnd : Return the node’s data that is k places from the tail of the linked list */
+  kthFormEnd(k) {
+    let current = this.head;
+    let length = 0;
+    while (current.next) {
+      length++;
+      current = current.next;
+    }
+    if (k > length || k < 0) {
+      return "Exception";
+    }
+    else {
+      length = (length) - k;
+      current = this.head;
+      while (length > 0) {
+        current = current.next;
+        length--;
+      }
+      return current.data;
+    }
+  }
+
 }
 
-// const ll = new LinkedList();
-// ll.insert(10);
-// ll.insert(20);
-// ll.insert(30);
+const ll = new LinkedList();
+ll.append(10);
+ll.append(20);
+ll.append(30);
+ll.append(40);
+ll.append(50);
 // ll.toString();
 // ll.insertBefore(20,80);
 // console.log(ll.append(100));
@@ -127,6 +155,8 @@ class LinkedList {
 // console.log(ll.insertBefore(20,80));
 // console.log(ll.includes(20));
 // console.log(ll.getAt(2));
-// console.log(ll.toString());
+console.log(ll.toString());
+
+console.log(ll.kthFormEnd(3));
 
 module.exports = LinkedList;
