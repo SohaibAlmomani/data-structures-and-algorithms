@@ -105,7 +105,7 @@ test('Can successfully insert a node before the first node of a linked list', ()
   ll.append('10');
   ll.append('20');
   ll.insertBefore('10', 'f');
-  console.log(ll.toString());
+  // console.log(ll.toString());
   expect(ll.head.data).toEqual('f');
 });
 
@@ -129,4 +129,41 @@ test('Can successfully insert a node after the last node of the linked list', ()
   expect(ll.head.next.next.next.data).toEqual('x');
   expect(ll.head.next.next.next.next).toBeNull();
 
+});
+
+/* Test for Code Challenge: Class 07 */
+
+test('Where k is greater than the length of the linked list', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  expect(ll.kthFormEnd(2)).toEqual('Exception');
+});
+
+test('Where k and the length of the list are the same', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  ll.append('20');
+  expect(ll.kthFormEnd(1)).toEqual('10');
+});
+
+test('Where k is not a positive integer', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  expect(ll.kthFormEnd(-1)).toEqual('Exception');
+});
+
+test('Where the linked list is of a size 1', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  expect(ll.kthFormEnd(0)).toEqual('10');
+});
+
+test('Happy Path” where k is not at the end, but somewhere in the middle of the linked list', () => {
+  const ll = new LinkedList();
+  ll.append('10');
+  ll.append('20');
+  ll.append('30');
+  ll.append('40');
+  ll.append('50');
+  expect(ll.kthFormEnd(3)).toEqual('20');
 });
