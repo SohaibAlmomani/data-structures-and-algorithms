@@ -159,18 +159,46 @@ class LinkedList {
     }
     return zippedList.toString();
   }
+
+  /* Code Challenge: Class 09  */
+
+  reverse() {
+    let prev = null;
+    let next = null;
+    let current = this.head;
+    if (current !== null) {
+      while (current) {
+        next = current.next;
+        current.next = prev;
+        prev = current;
+        current = next;
+      }
+      this.head = prev;
+      return `{ ${this.data} } -> `;
+    }
+    return 'this Linked List is empty';
+  }
+
 }
 
-const ll1 = new LinkedList();
-const ll2 = new LinkedList();
+// const ll1 = new LinkedList();
+// const ll2 = new LinkedList();
 let ll = new LinkedList();
 
-ll1.append(1);
-ll1.append(3);
-ll1.append(2);
-ll2.append(5);
-ll2.append(9);
-ll2.append(4);
+// ll.append(1);
+// ll.append(2);
+// ll.append(3);
+// ll.append(4);
+// ll.append(5);
+
+ll.append('a');
+ll.append('b');
+ll.append('c');
+ll.append('d');
+ll.append('e');
+
+ll.reverse();
+console.log(ll.toString());
 // ll.toString();
 // ll.insertBefore(20,80);
 // console.log(ll.append(100));
@@ -179,8 +207,8 @@ ll2.append(4);
 // console.log(ll.includes(20));
 // console.log(ll.getAt(2));
 
-ll = ll1.zipLists(ll1, ll2);
-console.log(ll.toString());
+//ll = ll1.zipLists(ll1, ll2);
+// ll.reverse();
 
 // console.log(ll.kthFormEnd(3));
 
