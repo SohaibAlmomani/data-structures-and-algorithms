@@ -209,3 +209,28 @@ test('In case (3) zipLists method, where the length of linked list 1 is greater 
   ll = ll1.zipLists(ll1, ll2);
   expect(ll.toString()).toEqual('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> NULL');
 });
+
+/* Test for Code Challenge: Class 09 */
+
+test('can successfully reverse the Linked List ', () => {
+  const ll = new LinkedList();
+  ll.append('1');
+  ll.append('2');
+  ll.append('3');
+  ll.append('4');
+  ll.append('5');
+  ll.reverse();
+  expect(ll.toString()).toEqual('{ 5 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> NULL');
+});
+
+test('can successfully reverse the Linked List ', () => {
+  const ll = new LinkedList();
+  ll.append('a');
+  ll.append('b');
+  ll.append('c');
+  ll.append('d');
+  ll.append('e');
+  ll.reverse();
+  expect(ll.toString()).toEqual('{ e } -> { d } -> { c } -> { b } -> { a } -> NULL');
+});
+
