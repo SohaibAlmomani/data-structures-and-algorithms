@@ -167,3 +167,45 @@ test('Happy Path” where k is not at the end, but somewhere in the middle of th
   ll.append('50');
   expect(ll.kthFormEnd(3)).toEqual('20');
 });
+
+/* Test for Code Challenge: Class 08 */
+
+test('In case (1) zipLists method, where two linked lists have the same length', () => {
+  const ll1 = new LinkedList();
+  const ll2 = new LinkedList();
+  let ll = new LinkedList();
+  ll1.append(1);
+  ll1.append(3);
+  ll1.append(2);
+  ll2.append(5);
+  ll2.append(9);
+  ll2.append(4);
+  ll = ll1.zipLists(ll1, ll2);
+  expect(ll.toString()).toEqual('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> { 4 } -> NULL');
+});
+
+test('In case (2) zipLists method, where the length of linked list 2 is greater than the length of linked list 1', () => {
+  const ll1 = new LinkedList();
+  const ll2 = new LinkedList();
+  let ll = new LinkedList();
+  ll1.append(1);
+  ll1.append(3);
+  ll2.append(5);
+  ll2.append(9);
+  ll2.append(4);
+  ll = ll1.zipLists(ll1, ll2);
+  expect(ll.toString()).toEqual('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 4 } -> NULL');
+});
+
+test('In case (3) zipLists method, where the length of linked list 1 is greater than the length of linked list 2', () => {
+  const ll1 = new LinkedList();
+  const ll2 = new LinkedList();
+  let ll = new LinkedList();
+  ll1.append(1);
+  ll1.append(3);
+  ll1.append(2);
+  ll2.append(5);
+  ll2.append(9);
+  ll = ll1.zipLists(ll1, ll2);
+  expect(ll.toString()).toEqual('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> NULL');
+});

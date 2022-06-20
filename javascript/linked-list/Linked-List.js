@@ -140,14 +140,37 @@ class LinkedList {
     }
   }
 
+  /* Code Challenge: Class 08 */
+
+  /* zipLists : Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the zipped list. */
+  zipLists(list1, list2) {
+    let zippedList = new LinkedList();
+    let current1 = list1.head;
+    let current2 = list2.head;
+    while (current1 || current2) {
+      if (current1) {
+        zippedList.append(current1.data);
+        current1 = current1.next;
+      }
+      if (current2) {
+        zippedList.append(current2.data);
+        current2 = current2.next;
+      }
+    }
+    return zippedList.toString();
+  }
 }
 
-const ll = new LinkedList();
-ll.append(10);
-ll.append(20);
-ll.append(30);
-ll.append(40);
-ll.append(50);
+const ll1 = new LinkedList();
+const ll2 = new LinkedList();
+let ll = new LinkedList();
+
+ll1.append(1);
+ll1.append(3);
+ll1.append(2);
+ll2.append(5);
+ll2.append(9);
+ll2.append(4);
 // ll.toString();
 // ll.insertBefore(20,80);
 // console.log(ll.append(100));
@@ -155,8 +178,10 @@ ll.append(50);
 // console.log(ll.insertBefore(20,80));
 // console.log(ll.includes(20));
 // console.log(ll.getAt(2));
+
+ll = ll1.zipLists(ll1, ll2);
 console.log(ll.toString());
 
-console.log(ll.kthFormEnd(3));
+// console.log(ll.kthFormEnd(3));
 
 module.exports = LinkedList;
