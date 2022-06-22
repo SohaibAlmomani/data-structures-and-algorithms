@@ -73,10 +73,9 @@ we didn't use any loop then :
 
 ### All Test is passed :
 
-- Stack :
-  ![Stack test](./assets/Stack-test.png)
-- Queue :
-  ![Queue test](./assets/queue-test.png)
+
+  ![Stack and Queue test](./assets/Stack%20and%20Queue%20test.png)
+
 
 ## API
 
