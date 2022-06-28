@@ -21,7 +21,7 @@
 
 <!-- Embedded whiteboard image -->
 
-![stack-queue-pseudo](./assets/stack-queue-pseudo-whiteBoard.png)
+![stack-queue-pseudo](./assets/stack-queue-Pseudo-whiteBoard.png)
 
 ## Approach & Efficiency
 
