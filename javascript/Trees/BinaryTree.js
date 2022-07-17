@@ -46,6 +46,25 @@ class BinaryTree {
     traverse(this.root);
     return result;
   }
+
+  // Code Challenge: Class 16 ==> Find the Maximum Value in a Binary Tree
+  findMaxValue() {
+    let max = 0;
+    if (!this.root) return 'Empty Tree';
+    let traverse = (node) => {
+      if (node.value > max) {
+        max = node.value;
+      }
+      if (node.left) {
+        traverse(node.left);
+      }
+      if (node.right) {
+        traverse(node.right);
+      }
+    };
+    traverse(this.root);
+    return max;
+  }
 }
 
 module.exports = BinaryTree;

@@ -78,4 +78,15 @@ describe('TREES TEST', () => {
     expect(tree.contains(6)).toBe(false);
   });
 
+  // Test for Code Challenge: Class 16 ==> Find the Maximum Value in a Binary Tree
+  test('Can successfully return the Maximum Value in a Binary Tree', () => {
+    let output = 9;
+    let max = tree.findMaxValue(tree.root);
+    expect(max).toEqual(output);
+  });
+  test('Can successfully find and return Empty Tree in findMaxValue function', () => {
+    const tree = new BinaryTree();
+    expect(tree.findMaxValue(tree.root)).toEqual('Empty Tree');
+  });
+
 });
