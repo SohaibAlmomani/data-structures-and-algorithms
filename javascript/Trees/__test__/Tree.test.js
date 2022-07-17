@@ -3,7 +3,6 @@
 const Node = require('../Node');
 const BinaryTree = require('../BinaryTree');
 const BinarySearchTree = require('../BinarySearchTree');
-//const breadthFirst = require('../tree-breadth-first');
 
 let tree = null;
 
@@ -89,33 +88,5 @@ describe('TREES TEST', () => {
     const tree = new BinaryTree();
     expect(tree.findMaxValue(tree.root)).toEqual('Empty Tree');
   });
-
-
-  // test('Test Breadth First Function', () => {
-  //   let two = new Node(2);
-  //   let seven = new Node(7);
-  //   let five = new Node(5);
-  //   let two2 = new Node(2);
-  //   let six = new Node(6);
-  //   let five2 = new Node(5);
-  //   let eleven = new Node(11);
-  //   let nine = new Node(9);
-  //   let four = new Node(4);
-
-  //   two.left = seven;
-  //   two.right = five;
-  //   seven.left = two2;
-  //   seven.right = six;
-  //   six.left = five2;
-  //   six.right = eleven;
-  //   five.right = nine;
-  //   nine.left = four;
-
-  //   const newTree = new BinaryTree(two);
-  //   let expectedOutput = [2, 7, 5, 2, 6, 9, 5, 11, 4];
-  //   //let bF = newTree.breadthFirst(newTree);
-  //   //expect(expectedOutput).toEqual(bF);
-  //   expect(breadthFirst(newTree)).toEqual(expectedOutput);
-  // });
 
 });
