@@ -160,8 +160,9 @@ class LinkedList {
     return zippedList.toString();
   }
 
-  /* Code Challenge: Class 09  */
+  /* Code Challenge: Class 09  Mock Interviews  */
 
+  /* reverse : write a function to reverse a Singly Linked List */
   reverse() {
     let prev = null;
     let next = null;
