@@ -210,7 +210,7 @@ test('In case (3) zipLists method, where the length of linked list 1 is greater 
   expect(ll.toString()).toEqual('{ 1 } -> { 5 } -> { 3 } -> { 9 } -> { 2 } -> NULL');
 });
 
-/* Test for Code Challenge: Class 09 */
+/* Test for Code Challenge: Class 09  Mock Interviews  */
 
 test('can successfully reverse the Linked List ', () => {
   const ll = new LinkedList();
@@ -223,7 +223,7 @@ test('can successfully reverse the Linked List ', () => {
   expect(ll.toString()).toEqual('{ 5 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> NULL');
 });
 
-test('can successfully reverse the Linked List ', () => {
+test('can successfully reverse the Linked List that have a string data', () => {
   const ll = new LinkedList();
   ll.append('a');
   ll.append('b');
