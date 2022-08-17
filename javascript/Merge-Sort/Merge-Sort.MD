@@ -6,7 +6,7 @@ Once you are done with your article, code a working, tested implementation of Me
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![Merge-Sort](Merge-Sort)
+![Merge-Sort](./Mergesort.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
