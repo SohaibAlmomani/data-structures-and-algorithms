@@ -41,7 +41,7 @@ class LinkedList {
       currentNode = currentNode.next;
     }
     string += `NULL`;
-    return string;
+    return console.log(string);
   }
 
 
@@ -180,6 +180,24 @@ class LinkedList {
     return 'this Linked List is empty';
   }
 
+  removeDuplicates() {
+    let current = this.head;
+    let unique = null;
+    const arr = [];
+
+    while (current) {
+      if (!arr[current.data]) {
+        arr[current.data] = current.data;
+        unique = current;
+      } else {
+        unique.next = current.next;
+      }
+      current = current.next;
+
+    }
+    return console.log(this.head);
+  }
+
 }
 
 // const ll1 = new LinkedList();
@@ -192,14 +210,22 @@ let ll = new LinkedList();
 // ll.append(4);
 // ll.append(5);
 
-ll.append('a');
-ll.append('b');
-ll.append('c');
-ll.append('d');
-ll.append('e');
+ll.append(1);
+ll.append(2);
+ll.append(3);
+ll.append(2);
+ll.append(4);
+ll.append(5);
+// ll.append(2);
+// ll.append(4);
+// ll.append(3);
 
-ll.reverse();
-console.log(ll.toString());
+ll.toString();
+ll.removeDuplicates();
+// ll.toString();
+// console.log(ll.toString());
+
+
 // ll.toString();
 // ll.insertBefore(20,80);
 // console.log(ll.append(100));
